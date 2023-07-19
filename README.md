@@ -1,6 +1,4 @@
-# ICS 32 Final Project
-
-#Name #student id #email
+# Chat Bubble
 
 
 The zip contains three types of files: the dsu file, the PDOC files, and the python file.
