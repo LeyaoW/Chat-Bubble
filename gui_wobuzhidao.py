@@ -83,8 +83,8 @@ class Body(tk.Frame):
         objects. Clear out original contents in the display_editor text box and then post the loaded messege into the box.'''
         self.display_editor.delete(0.0, 'end')
         self.get_selected_username()
-        f = open(self.current_path, 'r')
-        local_contents = f.readlines()
+        with open(self.current_path, 'r') as f:
+            local_contents = f.readlines()
 
         dm_list=self.load_dm_list(local_contents)
         self.process_dm_list( dm_list)
